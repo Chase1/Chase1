@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
-	<head> 
-		<title>Mr. Crumpton Page</title>
+    <head>
+    	<title>Mr. Crumpton Page</title>
 	</head>
 	<body>
-		<p id="hellow paragraph">Hello!</p>
+		<form onsubmit="say_goodbye()">
+			<input type="text" id="name" value="type name-> enter"/>
+		</form>
+		<p id="salutation">Type your name above and hit enter!"</p>
 		<script type="text/javascript">
-			document.getElementById(hello_paragraph").innerHTML="die jew"
-		</script>
-	</body>
+			 function say_goodbye(){
+			var name = document.getElementById("name").value;
+			document.getElementaryById("salutation").innerText="HelloerTename + "! " + name + "!";
+			 n/body>
 </html>
